@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="{% static 'javascript/script.js' %}"></script>
+</head>
+<body>
+    <h1>Página de frutas</h1>
+
+    <div class="container">
+        <h1>Agregar frutas</h1>
+        <input type="text" id="nombre_fruta" placeholder="Nombre de la fruta">
+        <input type="number" id="precio_fruta" placeholder="Precio de la fruta">
+        <button type="button" id="subir_fruta">Agregar fruta</button>
+    </div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo_tabla">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="edicion">
+        <h1>Editar fruta</h1>
+        <h1 id="id_fruta"></h1>
+        <input type="text" id="nuevo_nombre_fruta" placeholder="Nombre de la fruta">
+        <input type="number" id="nuevo_precio_fruta" placeholder="Precio de la fruta">
+        <button type="button" id="nuevo_subir_fruta">Actualizar fruta</button>
+    </div>
+</body>
+</html>
